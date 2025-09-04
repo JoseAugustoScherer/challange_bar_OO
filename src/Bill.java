@@ -14,12 +14,12 @@ public class Bill {
     }
 
     public double feeding() {
-        return (beer * 5.00) + (barbecue * 7.00) + (softDrink * 3.00);
+        return ( beer * 5.00 ) + ( barbecue * 7.00 ) + ( softDrink * 3.00 );
     }
 
     public double ticket() {
-        if (gender == 'F') {
-            return 8.00;
+        if ( gender == 'f' ) {
+            return 8.00; 
         } else {
             return 10.0;
         }
@@ -32,7 +32,7 @@ public class Bill {
     public Bill() {
     }
 
-    public Bill(char gender, int beer, int barbecue, int softDrink) {
+    public Bill( char gender, int beer, int barbecue, int softDrink ) {
         this.gender = gender;
         this.beer = beer;
         this.barbecue = barbecue;
@@ -43,15 +43,33 @@ public class Bill {
         return gender;
     }
 
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
     public int getBeer() {
         return beer;
+    }
+
+    public void setBeer(int beer) {
+        this.beer = beer;
     }
 
     public int getBarbecue() {
         return barbecue;
     }
 
+    public void setBarbecue(int barbecue) {
+        this.barbecue = barbecue;
+    }
+
     public int getSoftDrink() {
         return softDrink;
     }
+
+    public void setSoftDrink(int softDrink) {
+        this.softDrink = softDrink;
+    }
+
+    
 }
